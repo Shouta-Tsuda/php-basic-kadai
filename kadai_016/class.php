@@ -70,6 +70,22 @@ declare(strict_types=1);
 
         $potato->set_name('ポテト');
         $potato->show_name();
+
+        $potato->set_price(200);
+        $potato->show_price();
+
+        $zoo = new Animal();
+
+        $zoo->set_name('象');
+        $zoo->show_name();
+
+        $zoo->set_height(400);
+        $zoo->show_height();
+
+        $zoo->set_weight(600);
+        $zoo->show_weight();
+
+        
         ?>
     </p>
 

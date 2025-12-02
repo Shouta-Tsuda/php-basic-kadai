@@ -17,20 +17,9 @@ declare(strict_types=1);
             public $name;
             public $price;
 
-            public function set_name(string $name){
+            public function __construct(string $name, string $price){
                 $this->name = $name;
-            }
-
-            public function show_name(){
-                echo $this->name . '<br>';
-            }
-
-            public function set_price(string $price){
                 $this->price = $price;
-            }
-
-            public function show_price(){
-                echo $this->price . '<br>';
             }
         }
 
@@ -39,53 +28,22 @@ declare(strict_types=1);
             public $height;
             public $weight;
 
-            public function set_name(string $name){
+            public function __construct(string $name, string $height, string $weight){
                 $this->name = $name;
-            }
-
-            public function show_name(){
-                echo $this->name . '<br>';
-            }
-
-            public function set_height(string $height){
                 $this->height = $height;
-            }
-
-            public function show_height(){
-                echo $this->height . '<br>';
-            }
-
-            public function set_weight(string $weight){
                 $this->weight = $weight;
-            }
-
-            public function show_weight(){
-                echo $this->weight . '<br>';
             }
         }
 
 
 
-        $potato = new Food();
-
-        $potato->set_name('ポテト');
-        $potato->show_name();
-
-        $potato->set_price(200);
-        $potato->show_price();
-
-        $zoo = new Animal();
-
-        $zoo->set_name('象');
-        $zoo->show_name();
-
-        $zoo->set_height(400);
-        $zoo->show_height();
-
-        $zoo->set_weight(600);
-        $zoo->show_weight();
-
+        $potato = new Food('ポテト',200);
+        print_r($potato);
         
+
+        $zoo = new Animal('ポテト',200,600);
+        print_r($zoo);
+
         ?>
     </p>
 

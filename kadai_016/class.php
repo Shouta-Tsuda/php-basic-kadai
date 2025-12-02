@@ -21,6 +21,10 @@ declare(strict_types=1);
                 $this->name = $name;
                 $this->price = $price;
             }
+
+            public function show_price() {
+            echo $this->price . '<br>';
+            }
         }
 
         class Animal{
@@ -33,16 +37,22 @@ declare(strict_types=1);
                 $this->height = $height;
                 $this->weight = $weight;
             }
+
+            public function show_height() {
+            echo $this->height . '<br>';
+            }
         }
 
 
 
         $potato = new Food('ポテト',200);
         print_r($potato);
+        $potato->show_price();
         
 
         $zoo = new Animal('ポテト',200,600);
         print_r($zoo);
+        $zoo->show_height();
 
         ?>
     </p>

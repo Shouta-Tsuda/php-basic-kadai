@@ -1,0 +1,78 @@
+/*
+Theme Name: SAMURAI UNIVERSITY
+Theme URI: https://www.sejuku.net/
+Description: SAMURAI ENGINEERのWordPress教材
+Version: 1.0.0
+Author: SAMURAI ENGINEER
+Author URI: https://www.sejuku.net/
+*/
+
+/* .news_simple_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.news_simple_row:last-child {
+  border-bottom: none;
+}
+
+.news_simple_date {
+  font-size: 13px;
+  color: #999;
+  margin-right: 16px;
+  min-width: 90px;
+}
+
+.news_simple_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news_simple_title a {
+  color: #222;
+  text-decoration: none;
+}
+
+.news_simple_title a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .news_simple_row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .news_simple_date {
+    margin-bottom: 6px;
+  }
+} */
+
+.news_pagination {
+  text-align: center;
+  margin: 40px 0;
+}
+.news_pagination .page-numbers {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 8px 16px;
+  border: 1px solid #b8bfc1; /* お好みで */
+  background: #fff;
+  color: #949494;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+.news_pagination .page-numbers.current {
+  background: #5aa9b1;
+  color: #fff;
+  border-color: #5aa9b1;
+}
+.news_pagination .page-numbers:hover {
+  background: #b8bfc1;
+  color: #fff;
+}
